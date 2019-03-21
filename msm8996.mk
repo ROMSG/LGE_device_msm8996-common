@@ -190,6 +190,13 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libqdMetaData.system
 
+# LGE settings
+PRODUCT_PACKAGES += \
+    LGESettings
+
+# Doze mode
+PRODUCT_PACKAGES += \
+    LGDoze
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -383,9 +390,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
-
-
-# TimeKeep
 PRODUCT_PACKAGES += \
     timekeep \
     TimeKeep
