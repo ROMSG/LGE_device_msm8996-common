@@ -295,7 +295,7 @@
     <bool name="config_batterySdCardAccessibility">true</bool>
 
     <!-- Shutdown if the battery temperature exceeds (this value * 0.1) Celsius. -->
-    <integer name="config_shutdownBatteryTemperature">680</integer>
+    <integer name="config_shutdownBatteryTemperature">550</integer>
 
     <!-- Default list of files pinned by the Pinner Service -->
     <string-array translatable="false" name="config_defaultPinnerServiceFiles">
