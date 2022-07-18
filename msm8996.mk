@@ -115,6 +115,8 @@ PRODUCT_PACKAGES += \
 
 # FM
 PRODUCT_PACKAGES += \
+ 		android.hardware.broadcastradio@2.0 \
+		android.hardware.broadcastradio@2.0-impl \
     FMRadio \
     brcm-uim-sysfs \
     libfmjni
