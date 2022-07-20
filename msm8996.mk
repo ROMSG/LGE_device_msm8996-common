@@ -401,9 +401,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
 
-# GCam Go
+# GrapheneCamera
 PRODUCT_PACKAGES += \
-    GCamGO
+    Camera
 
 # Spectrum
 PRODUCT_PROPERTY_OVERRIDES += \
