@@ -160,6 +160,11 @@ service vendor.qseecomd /vendor/bin/qseecomd
     user root
     group root
 
+service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
+    class main
+    user root
+    group system wakelock
+
 service vendor.energy-awareness /vendor/bin/energy-awareness
     class main
     user root
