@@ -23,7 +23,6 @@ $(call inherit-product, vendor/lge/msm8996-common/msm8996-common-vendor.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
 # Properties
 -include $(LOCAL_PATH)/vendor_prop.mk
@@ -93,7 +92,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@7.0 \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.soundtrigger@2.1-impl \
-    audio.a2dp.default \
     audio.primary.msm8996 \
     audio.r_submix.default \
     audio.usb.default \
@@ -223,7 +221,7 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service
 
 # HIDL
-PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
+PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true \
 
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
@@ -263,12 +261,8 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-service \
     android.hardware.keymaster@3.0.vendor \
     android.hardware.keymaster@4.0-impl \
-    android.hardware.keymaster@4.0-service
+    android.hardware.keymaster@4.0-service \
     android.hardware.keymaster@4.0.vendor
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -380,9 +374,9 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     libxml2
     
-# Treble
-PRODUCT_PACKAGES += \
-    vndk-sp \
+# VNDK
+PRODUCT_HOST_PACKAGES += \
+    libdexfile
 
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v28/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-full-v28.so \
@@ -394,10 +388,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
-
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
 
 # USB
 PRODUCT_PACKAGES += \
