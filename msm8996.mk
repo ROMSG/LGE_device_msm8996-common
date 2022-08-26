@@ -149,7 +149,6 @@ PRODUCT_PACKAGES += \
     init.qcom.sensors.sh \
     init.qcom.usb.rc \
     init.target.rc \
-    init.spectrum.rc \
     ueventd.qcom.rc
 
 # Display
@@ -428,13 +427,6 @@ PRODUCT_PACKAGES += \
 # GrapheneCamera
 PRODUCT_PACKAGES += \
     Camera
-
-# Spectrum
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.spectrum.profile=0
-
-PRODUCT_PACKAGES += \
-    SpectrumTile
 
 # GalleryGO
 PRODUCT_PACKAGES += \
