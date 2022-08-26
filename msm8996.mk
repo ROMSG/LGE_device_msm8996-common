@@ -86,12 +86,12 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.audio@2.0-impl \
     android.hardware.audio.effect@2.0-impl \
-    android.hardware.audio@6.0 \
-    android.hardware.audio@6.0-impl \
+    android.hardware.audio@7.0 \
+    android.hardware.audio@7.0-impl \
     android.hardware.audio.common@6.0 \
     android.hardware.audio.common@6.0-util \
-    android.hardware.audio.effect@6.0 \
-    android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio.effect@7.0 \
+    android.hardware.audio.effect@7.0-impl \
     android.hardware.soundtrigger@2.1-impl \
     audio.a2dp.default \
     audio.primary.msm8996 \
@@ -106,8 +106,14 @@ PRODUCT_PACKAGES += \
 
 -include $(LOCAL_PATH)/audio/config.mk
 
+# Biometrics
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1.vendor
+    
 # Bluetooth
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0 \
+    android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth@1.0-impl \
     android.hardware.bluetooth@1.0-service \
     hwaddrs \
@@ -116,8 +122,8 @@ PRODUCT_PACKAGES += \
 
 # FM
 PRODUCT_PACKAGES += \
- 		android.hardware.broadcastradio@2.0 \
-		android.hardware.broadcastradio@2.0-impl \
+    android.hardware.broadcastradio@2.0 \
+    android.hardware.broadcastradio@2.0-impl \
     FMRadio \
     brcm-uim-sysfs \
     libfmjni
@@ -169,7 +175,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
-    android.hardware.drm@1.3-service.clearkey
+    android.hardware.drm@1.3-service.clearkey \
+    android.hardware.drm@1.0.vendor \
+    android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.2.vendor \
+    android.hardware.drm@1.3.vendor
 
 # Recovery
 PRODUCT_PACKAGES += \
@@ -178,7 +188,8 @@ PRODUCT_PACKAGES += \
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
-    android.hardware.gatekeeper@1.0-service
+    android.hardware.gatekeeper@1.0-service \
+    android.hardware.gatekeeper@1.0.vendor
 
 # Gesture handler
 PRODUCT_PACKAGES += \
@@ -189,6 +200,8 @@ PRODUCT_GMS_CLIENTID_BASE := android-om-lg
 
 # GPS
 PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0 \
+    android.hardware.gnss@1.0.vendor \
     android.hardware.gnss@1.0-impl-qti \
     android.hardware.gnss@1.0-service-qti \
     libgnss \
@@ -247,7 +260,11 @@ PRODUCT_COPY_FILES += \
 # Keymaster HAL
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
-    android.hardware.keymaster@3.0-service
+    android.hardware.keymaster@3.0-service \
+    android.hardware.keymaster@3.0.vendor \
+    android.hardware.keymaster@4.0-impl \
+    android.hardware.keymaster@4.0-service
+    android.hardware.keymaster@4.0.vendor
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
@@ -265,6 +282,7 @@ PRODUCT_COPY_FILES += \
 
 # Net
 PRODUCT_PACKAGES += \
+    android.system.net.netd@1.0.vendor \
     android.system.net.netd@1.0 \
     libandroid_net \
     netutils-wrapper-1.0
@@ -324,6 +342,13 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librmnetctl
 
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.1 \
+    android.hardware.radio@1.1.vendor \
+    android.hardware.radio.deprecated@1.0 \
+    android.hardware.radio.deprecated@1.0.vendor
+    
 # Seccomp policy
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
@@ -354,7 +379,7 @@ PRODUCT_PACKAGES += \
     libjson \
     libtinyxml \
     libxml2
-
+    
 # Treble
 PRODUCT_PACKAGES += \
     vndk-sp \
