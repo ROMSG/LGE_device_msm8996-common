@@ -144,6 +144,7 @@ PRODUCT_PACKAGES += \
 # Device init scripts
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    init.logging.rc \
     init.qcom.rc \
     init.qcom.sh \
     init.qcom.sensors.sh \
