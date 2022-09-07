@@ -127,7 +127,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.earlyGl.sf.duration=13500000 \
     debug.sf.late.app.duration=20500000 \
     debug.sf.late.sf.duration=10500000 \
-    debug.sf.use_phase_offsets_as_durations=1
+    debug.sf.use_phase_offsets_as_durations=1 \
+    debug.renderengine.backend=skiaglthreaded
 
 # HWUI
 PRODUCT_PROPERTY_OVERRIDES += \
