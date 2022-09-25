@@ -115,8 +115,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=1 \
     debug.gralloc.gfx_ubwc_disable=0 \
     debug.hwui.use_partial_updates=true \
-    debug.hwui.renderer=vulkan \
-    debug.renderengine.backend=vulkan \
+    debug.hwui.renderer=skiagl \
+    debug.renderengine.backend=skiaglthreaded \
     dev.pm.dyn_samplingrate=1 \
     persist.demo.hdmirotationlock=false \
     sdm.perf_hint_window=50 \
@@ -136,7 +136,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hwui.text_large_cache_width=3072 \
     ro.hwui.text_large_cache_height=2048 \
     ro.hwui.render_ahead=1
-    ro.hwui.use_vulkan=1
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
