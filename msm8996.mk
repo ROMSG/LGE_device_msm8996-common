@@ -106,7 +106,7 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libvolumelistener \
-    libtinycompress
+    libtinycompress \
 
 -include $(LOCAL_PATH)/audio/config.mk
 
@@ -178,9 +178,8 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     vendor.display.color@1.0-impl \
     vendor.display.color@1.0-service \
-    vendor.display.config@1.0.vendor \
-    vendor.display.config@2.0 \
-    vendor.display.config@2.0.vendor \
+    vendor.display.config@1.9 \
+    vendor.display.config@1.9.vendor \
     gralloc.msm8996 \
     hdmi_cec.msm8996 \
     hwcomposer.msm8996 \
