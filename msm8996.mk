@@ -100,6 +100,7 @@ PRODUCT_PACKAGES += \
     audio.primary.msm8996 \
     audio.r_submix.default \
     audio.usb.default \
+    libaudioroute \
     libaacwrapper \
     libaudio-resampler \
     libqcompostprocbundle \
@@ -287,7 +288,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
     android.hardware.keymaster@3.0-service \
-    android.hardware.keymaster@3.0.vendor \
+    android.hardware.keymaster@3.0.vendor
 
 # Media
 PRODUCT_COPY_FILES += \
