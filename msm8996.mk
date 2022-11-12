@@ -356,16 +356,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
-# RIL
+# RIL Not functional at the moment.
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.4 \
-    android.hardware.radio@1.4.vendor \
-    android.hardware.radio.config@1.1 \
-    android.hardware.radio.config@1.1.vendor \
-    android.hardware.radio.deprecated@1.0 \
-    android.hardware.radio.deprecated@1.0.vendor \
-    libprotobuf-cpp-full \
+libprotobuf-cpp-full \
     librmnetctl 
+#    android.hardware.radio@1.4 \
+#    android.hardware.radio@1.4.vendor \
+#    android.hardware.radio.config@1.1 \
+#    android.hardware.radio.config@1.1.vendor \
+#    android.hardware.radio.deprecated@1.0 \
+#    android.hardware.radio.deprecated@1.0.vendor \
     
 # Seccomp policy
 PRODUCT_COPY_FILES += \
