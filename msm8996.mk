@@ -451,15 +451,9 @@ PRODUCT_PACKAGES += \
     libaacwrapper \
     libnl
 
-
-
 # CryptfsHW
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
-
-# GrapheneCamera
-PRODUCT_PACKAGES += \
-    Camera
 
 # GalleryGO
 PRODUCT_PACKAGES += \
