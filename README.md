@@ -11,8 +11,8 @@ This is the common platform trees used by the following:
 ########################################################
 
 #Issues/bugs
--Broken fingerprint
--Dac control is non-functional at the moment
+
+-Dac filters are non funtional
 
 ########################################################
 
