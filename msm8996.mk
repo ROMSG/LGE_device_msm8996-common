@@ -177,19 +177,15 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    vendor.display.color@1.0-impl \
-    vendor.display.color@1.0-service \
-    vendor.display.config@1.9 \
-    vendor.display.config@1.9.vendor \
     gralloc.msm8996 \
     hdmi_cec.msm8996 \
     hwcomposer.msm8996 \
     memtrack.msm8996 \
     libdisplayconfig \
-    libdisplayconfig.vendor \
-    libdisplayconfig.qti \
     libqdMetaData \
-    libqdMetaData.system
+    libqdMetaData.system \
+    vendor.display.config@1.9 \
+    vendor.display.config@1.9.vendor
 
 # LGE settings
 PRODUCT_PACKAGES += \
