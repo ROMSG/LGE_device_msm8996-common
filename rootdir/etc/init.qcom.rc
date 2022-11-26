@@ -148,6 +148,10 @@ on boot
 
     # Enable sched boost
     write /proc/sys/kernel/sched_boost 1
+    
+    # Raise schedutil down_rate_limit
+    write /sys/devices/system/cpu/cpufreq/policy2/schedutil/down_rate_limit_us 25000
+    write /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us 25000
 
     # Wifi firmware reload path
     chown wifi wifi /sys/module/bcmdhd/parameters/firmware_path
