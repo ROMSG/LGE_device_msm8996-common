@@ -187,13 +187,6 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.9 \
     vendor.display.config@1.9.vendor
 
-# LGE settings
-PRODUCT_PACKAGES += \
-    LGESettings
-
-# Doze mode
-PRODUCT_PACKAGES += \
-    LGDoze
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -380,6 +373,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+
+
+# TimeKeep
 PRODUCT_PACKAGES += \
     timekeep \
     TimeKeep
